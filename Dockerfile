@@ -1,6 +1,9 @@
 FROM node:14
 WORKDIR /app
 
+LABEL maintainer "Mark Lopez <m@silvenga.com>"
+LABEL org.opencontainers.image.source https://github.com/silvenga-docker/btc-rpc-explorer
+
 RUN set -xe \
     && apt-get update \
     && apt-get install -y git \
